@@ -1,10 +1,12 @@
-﻿namespace CSharpCoding
+namespace CSharpCoding
 {
     internal class Program
     {
         static void Main()
         {
-            /*Console.Write("Enter initial balance: ");
+            /*
+            // Encapsulation01 //
+            Console.Write("Enter initial balance: ");
             double initialBalance = Convert.ToDouble(Console.ReadLine());
             Encapsulation01 account = new Encapsulation01(initialBalance);
 
@@ -14,12 +16,16 @@
 
             Console.Write("Enter withdrawal amount: ");
             double withdrawal = Convert.ToDouble(Console.ReadLine());
-            account.Withdraw(withdrawal);*/
+            account.Withdraw(withdrawal); */
 
 
 
 
-            /*DataHiding student = new DataHiding();
+
+
+            /*
+            // Data Hiding //
+            DataHiding student = new DataHiding();
 
             Console.Write("Enter Name: ");
             student.Name = Console.ReadLine();
@@ -27,13 +33,16 @@
             Console.Write("Enter Roll Number: ");
             student.RollNo = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"\nStudent Details:\nName: {student.Name}\nRoll No: {student.RollNo}");*/
+            Console.WriteLine($"\nStudent Details:\nName: {student.Name}\nRoll No: {student.RollNo}"); */
 
 
 
 
 
-            /*Console.Write("Enter Title: ");
+
+            /*
+            // Construction Overloading //
+            Console.Write("Enter Title: ");
             string title = Console.ReadLine();
 
             Console.Write("Enter Author: ");
@@ -50,13 +59,15 @@
             else
                 book = new ConstructionOverloading(title, author, isbn);  // Constructor with all details
 
-            book.Display();*/
+            book.Display(); */
 
 
 
 
 
-            /*Console.Write("Enter radius of Circle: ");
+            /*
+            // Calculating Area //
+            Console.Write("Enter radius of Circle: ");
             double radius = Convert.ToDouble(Console.ReadLine());
             Shape circle = new Circle(radius);
             Console.WriteLine($"Area of Circle: {circle.CalculateArea()}");
@@ -66,14 +77,16 @@
             Console.Write("Enter width of Rectangle: ");
             double width = Convert.ToDouble(Console.ReadLine());
             Shape rectangle = new Rectangle(length, width);
-            Console.WriteLine($"Area of Rectangle: {rectangle.CalculateArea()}");*/
+            Console.WriteLine($"Area of Rectangle: {rectangle.CalculateArea()}"); */
 
 
 
 
 
 
-            /*Console.Write("Enter vehicle type (Car/Bike): ");
+            /*
+            // Vehicle System //
+            Console.Write("Enter vehicle type (Car/Bike): ");
             string type = Console.ReadLine().ToLower();
 
             Vehicle vehicle;
@@ -88,14 +101,18 @@
                 vehicle = new Vehicle();
             }
 
-            vehicle.Start();  // Demonstrates method overriding (polymorphism)*/
+            vehicle.Start();  // Demonstrates method overriding (polymorphism) */
 
 
 
 
 
 
-            /*Console.Write("Enter role (Student/Teacher): ");
+
+
+            /*
+            // Virtual Machine //
+            Console.Write("Enter role (Student/Teacher): ");
             string role = Console.ReadLine().ToLower();
 
             Person person;
@@ -123,7 +140,7 @@
                 person = new Person { Name = name, Age = age };
             }
 
-            person.GetDetails();  // Demonstrates method overriding and polymorphism*/
+            person.GetDetails();  // Demonstrates method overriding and polymorphism */
 
 
 
@@ -131,7 +148,11 @@
 
 
 
-            /*Calculator calc = new Calculator();
+
+
+            /*
+            // Calculator //
+            Calculator calc = new Calculator();
 
             Console.Write("Enter first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
@@ -147,25 +168,31 @@
             else if (num1 % 1 == 0 && num2 % 1 == 0)
                 Console.WriteLine($"Sum: {calc.Add((int)num1, (int)num2)}");
             else
-                Console.WriteLine($"Sum: {calc.Add(num1, num2)}");*/
+                Console.WriteLine($"Sum: {calc.Add(num1, num2)}"); */
 
 
 
 
 
 
-            /*Console.Write("Enter player type (Music/Video): ");
+            /*
+            // IPlayable //
+            Console.Write("Enter player type (Music/Video): ");
             string type = Console.ReadLine().ToLower();
 
             IPlayable player = type == "music" ? new MusicPlayer() : new VideoPlayer();
-            player.Play();  // Demonstrates interface-based polymorphism*/
+            player.Play();  // Demonstrates interface-based polymorphism */
 
 
 
 
 
 
-            /* Console.Write("Enter report content: ");
+
+
+            /*
+            // IPrintable //
+            Console.Write("Enter report content: ");
             string content = Console.ReadLine();
 
             Report report = new Report(content);
@@ -178,13 +205,17 @@
             else if (action == "save")
                 report.SaveToFile();
             else
-                Console.WriteLine("Invalid action.");*/
+                Console.WriteLine("Invalid action."); */
 
 
 
 
 
-            /* Console.Write("Enter Username: ");
+
+
+            /* 
+            // Access System //
+            Console.Write("Enter Username: ");
             string username = Console.ReadLine();
 
             Console.Write("Enter Role (Admin/Customer): ");
@@ -201,6 +232,8 @@
 
 
 
+
+            // Complex Number //
             /* Console.Write("Enter real part of the first complex number: ");
             double real1 = Convert.ToDouble(Console.ReadLine());
 
@@ -226,6 +259,8 @@
 
 
 
+
+            // Department //
             /* Console.Write("Enter Department Name: ");
             string deptName = Console.ReadLine();
 
@@ -250,6 +285,8 @@
 
 
 
+
+            // Bank //
             /* Console.Write("Enter Interest Rate: ");
             double rate = Convert.ToDouble(Console.ReadLine());
             Bank.SetInterestRate(rate); // Setting static interest rate
@@ -268,7 +305,7 @@
 
 
 
-
+            // Security System //
             /* Console.Write("Set Security System Password: ");
             string password = Console.ReadLine();
 
@@ -279,6 +316,9 @@
 
 
 
+
+
+            // Button //
             /* Button btn = new Button();
 
             // Subscribe an event handler
@@ -294,6 +334,7 @@
 
 
 
+            // Vehicle Factory //
             /* Console.Write("Enter vehicle type (Car/Bike): ");
             string vehicleType = Console.ReadLine();
 
@@ -311,7 +352,7 @@
 
 
 
-
+            // ILogger //
             /* Console.Write("Enter log message: ");
             string message = Console.ReadLine();
 
@@ -326,7 +367,7 @@
 
 
 
-
+            // Configuration Manager //
             /* Console.WriteLine("Press Enter to get Configuration Manager instance...");
             Console.ReadLine();
 
@@ -342,6 +383,7 @@
 
 
 
+            // Notification Service //
             /* NotificationService service = new NotificationService();
 
             service.Subscribe(new EmailNotifier());
@@ -357,8 +399,8 @@
 
 
 
-
-            ShoppingCart cart = new ShoppingCart();
+            // Shopping Cart //
+            /* ShoppingCart cart = new ShoppingCart();
 
             Console.Write("Enter total price: ");
             double total = Convert.ToDouble(Console.ReadLine());
@@ -383,7 +425,7 @@
                     break;
             }
 
-            Console.WriteLine($"Final Price: {cart.CalculateTotal(total)}");
+            Console.WriteLine($"Final Price: {cart.CalculateTotal(total)}"); */
         }
     }
 }
